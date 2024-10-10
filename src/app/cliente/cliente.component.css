@@ -1,0 +1,32 @@
+.form-container {
+    max-width: 500px; /* ajuste o tamanho do formulário */
+    margin: 40px auto; /* centralize horizontalmente */
+    padding: 20px; /* adicione um pouco de padding */
+    background-color: #f9f9f9; /* adicione um fundo branco */
+    border: 1px solid #ccc; /* adicione uma borda */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* adicione uma sombra */
+  }
+  
+  .form-container h1 {
+    text-align: center; /* centralize o título */
+    margin-bottom: 20px; /* adicione um pouco de espaço entre o título e o formulário */
+  }
+  
+  .form-container input, .form-container button {
+    width: 100%; /* faça os campos de entrada e o botão ocuparem toda a largura */
+    margin-bottom: 20px; /* adicione um pouco de espaço entre os campos */
+    padding: 10px; /* adicione um pouco de padding */
+    border: 1px solid #ccc; /* adicione uma borda */
+  }
+  
+  .form-container button {
+    background-color: #337ab7; /* adicione um fundo azul para o botão */
+    color: #fff; /* adicione texto branco para o botão */
+    border: none; /* remova a borda do botão */
+    padding: 10px 20px; /* adicione um pouco de padding */
+    cursor: pointer; /* adicione um cursor de ponteiro */
+  }
+  
+  .form-container button:hover {
+    background-color: #23527c; /* adicione um efeito de hover para o botão */
+  }

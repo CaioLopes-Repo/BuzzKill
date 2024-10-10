@@ -1,0 +1,26 @@
+<h4>{{mensagem}}</h4>
+
+<input type="text" [(ngModel)]="filtro" placeholder="Busca"><br>
+
+<h3 class="produtos" *ngIf="lista.length<=0 && filtro.trim() === ''">
+  não existem produtos na vitrine
+</h3>
+
+<h3 class="produtos" *ngIf="lista.length<=0 && filtro.trim() !== ''">
+  Nenhum resultado encontrado para "{{filtro}}"
+</h3>
+
+<div class="card-grid">
+    <div *ngFor="let item of lista" [class.card.mb-3]="item.descritivo.toLowerCase().indexOf(filtro.toLowerCase())>=0 || filtro === ''">
+      <div *ngIf="item.descritivo.toLowerCase().indexOf(filtro.toLowerCase())>=0 || filtro === ''">
+        <img src="assets/{{item.codigo}}.jpg" class="card-img-top" alt="{{item.nome}}">
+        <div class="card-body">
+          <h4 class="card-title">{{item.nome}}</h4>
+          <p class="card-text">{{item.descritivo}}</p>
+          <p class="card-text">R$ {{item.valor}}</p>
+          <button class="btn btn-primary" (click)="verDetalhe(item)">Ver Mais</button>
+          <button *ngIf="item.quantidade>0" class="btn btn-success" (click)="adicionarItem(item)">Comprar</button>
+        </div>
+      </div>
+    </div>
+</div>

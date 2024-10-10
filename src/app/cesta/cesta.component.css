@@ -1,0 +1,84 @@
+/* Adicione esses estilos em um arquivo CSS separado ou no head do seu HTML */
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+  }
+  
+  button {
+    margin-left: 10%;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Estilos Bootstrap */
+  
+  table {
+    margin-bottom: 20px;
+  }
+  
+  table th, table td {
+    vertical-align: middle;
+  }
+  
+  table th {
+    font-weight: bold;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
+  /* Adicione esses estilos para o botão de remover item */
+  
+  button[ng-click="removerItem(x)"] {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[ng-click="removerItem(x)"]:hover {
+    background-color: #c0392b;
+  }
+
+
+@media only screen and (max-width: 768px) {
+    table {
+      font-size: 12px;
+    }
+    th, td {
+      padding: 4px;
+    }
+    button {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    button[ng-click="removerItem(x)"] {
+      padding: 3px 6px;
+      font-size: 10px;
+    }
+  }

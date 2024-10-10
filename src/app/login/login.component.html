@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-form">
+          <h2>Fazer Login</h2>
+          <b>{{mensagem}}</b><br>
+          <form>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" [(ngModel)]="obj.email" id="email" name="email" placeholder="Digite seu email" required>
+            </div>
+      
+            <div class="form-group">
+              <label for="senha">Senha</label>
+              <input type="password" class="form-control" [(ngModel)]="obj.senha" id="senha" name="senha" placeholder="Digite sua senha" required>
+            </div>
+      
+            <button type="submit" class="btn btn-primary btn-block form-button" (click)="fazerLogin()">Entrar</button>
+            <a href="./esqueci" class="reset-password">Recuperar senha !!</a>
+          </form>
+        </div>
+      
+        <div class="register-container">
+          <div class="register-header">Não tem uma conta?</div>
+          <p>Crie sua conta agora e comece a aproveitar nossos produtos!</p>
+          <a href="./cliente" class="btn btn-secondary btn-block">Criar Conta</a>
+        </div>
+      </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

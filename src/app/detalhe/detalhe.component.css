@@ -1,0 +1,89 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+  }
+  
+  .product-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-details {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .product-image {
+    max-width: 400px;
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-info {
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .product-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-info p {
+    font-size: 18px;
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  .product-info h4 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .btn-custom {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .btn-custom:hover {
+    background-color: #cccccc;
+  }
+  
+  /* Adicionei um estilo para o botão de comprar */
+  .comprar {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Adicionei essa linha para adicionar um efeito de transição */
+  }
+  
+  .comprar:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Adicionei um estilo para o texto de sem estoque */
+  .sem-estoque {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff0000;
+  }

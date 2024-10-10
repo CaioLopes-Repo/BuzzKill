@@ -1,13 +1,30 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <title>BuzzKill</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buzzkill - VEstimentas</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+  <header class="header d-flex align-items-center justify-content-between">
+    <div class="logo">Buzzkill - Vestimentas</div>
+    <div class="search-bar">
+        <input type="text" class="search-input" placeholder="Pesquisar...">
+    </div>
+    <div>
+      <a href="./login"><img src="assets/user.jpg" alt="Usuário" class="user-icon"></a>
+    </div>
+  </header>
+  <nav class="menu-bar text-center">
+    <a href="./vitrine">Promoções</a>
+    <a href="./cesta">Cesta de compras</a>
+    <a href="./busca">Pesquisar</a>
+  </nav>
   <app-root></app-root>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

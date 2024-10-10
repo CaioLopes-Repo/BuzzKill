@@ -1,0 +1,34 @@
+body {
+  background-color: #f9f9f9; /* cor de fundo */
+}
+
+.container {
+  max-width: 400px; /* largura máxima do container */
+  margin: 40px auto; /* margem superior e inferior de 40px e centralizado */
+  padding: 20px; /* padding de 20px */
+  background-color: #fff; /* cor de fundo do container */
+  border: 1px solid #ddd; /* borda do container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra do container */
+}
+
+h1 {
+  font-weight: bold; /* fonte em negrito */
+  margin-bottom: 20px; /* margem inferior do título */
+}
+
+.form-group {
+  margin-bottom: 20px; /* margem inferior do grupo de formulário */
+}
+
+.form-control {
+  height: 40px; /* altura do input */
+  padding: 10px; /* padding do input */
+  font-size: 16px; /* tamanho da fonte do input */
+}
+
+.btn {
+  width: 100%; /* largura do botão */
+  height: 40px; /* altura do botão */
+  font-size: 16px; /* tamanho da fonte do botão */
+  padding: 10px; /* padding do botão */
+}

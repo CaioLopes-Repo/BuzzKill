@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<body>
+
+  <div class="container product-page">
+    <h1>{{item.nome}}</h1>
+    <div class="product-details">
+      <img src="assets/{{item.codigo}}.jpg" alt="Produto" class="product-image">
+      <div class="product-info">
+        <h3>{{item.descritivo}}</h3>
+        <p>{{item.descritivo}}</p>
+        <h4>R$ {{item.valor}}</h4>
+        <button *ngIf="item.quantidade>0" (click)="adicionarItem(item)">Comprar</button>
+        <div *ngIf="item.quantidade<=0">Sem estoque</div>
+        <!-- You can add the "Adicionar ao Carrinho" button if needed -->
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
